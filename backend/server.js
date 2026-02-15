@@ -58,6 +58,9 @@ function simpleSignals(text) {
   if (score >= 70) label = "High risk";
   else if (score >= 40) label = "Medium risk";
 
+  fact_explanation = fact_explanation = grounded_fact_check(text)
+
+
   return {
     score,
     label,
@@ -67,6 +70,7 @@ function simpleSignals(text) {
       "Check if multiple reputable outlets report the same core facts.",
       "Be cautious with screenshots/quotes without context.",
     ],
+    "fact_explanation": fact_explanation
   };
 }
 

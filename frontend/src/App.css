@@ -1,42 +1,126 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Background */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #C8C4DD, #B8B2D4);
+  color: #333;
+}
+
+/* Main container */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Title pill */
+.ai-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #F5F5F7;
+  border: 2px solid #B9A7D6;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Cards */
+.input-card,
+.result-card {
+  width: 100%;
+  max-width: 800px;
+  background: #F5F5F7;
+  border: 2px solid #B9A7D6;
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  text-align: left;
 }
 
-.card {
-  padding: 2em;
+/* Textarea */
+textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
 }
 
-.read-the-docs {
-  color: #888;
+/* Analyze button */
+.analyze-btn {
+  margin-top: 24px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  border: none;
+  background: #9D8AC9;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.analyze-btn:hover {
+  background: #8C79BB;
+  transform: translateY(-2px);
+}
+
+/* Result header */
+.result-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.result-header p {
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* Sections */
+.result-section {
+  margin-top: 24px;
+}
+
+.result-section h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.result-section ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.result-section li {
+  margin-bottom: 6px;
+}
+
+.fact-box {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #f5f5f7;
+  border: 2px solid #b9a7d6;
+}
+
+.evidence {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.8;
 }
